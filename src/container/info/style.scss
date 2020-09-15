@@ -48,6 +48,7 @@
 			.info-msg {
 				font-size: x-large;
 				color: #262148;
+				white-space: pre-line;
 				@media screen and (max-width: 800px) {
 					padding: 0px 20px;
 					font-size: 4vw;

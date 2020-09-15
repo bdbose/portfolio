@@ -1,12 +1,11 @@
 /** @format */
 
 import React from 'react';
-import profile from '../../assets/bidiptobose.png';
 import './style.scss';
 const Img = () => {
 	return (
 		<div className='image'>
-			<img src={`${profile}`} alt='' />
+			<img src='/bidiptobose.png' alt='Bidipto Bose' />
 		</div>
 	);
 };
