@@ -1,0 +1,15 @@
+/** @format */
+
+.image {
+	margin: auto;
+	width: fit-content;
+	position: relative;
+	bottom: -110px;
+	transform: translate(0px, 0px);
+	img {
+		border: solid 10px white;
+		border-radius: 50%;
+		width: 200px;
+		height: 100%;
+	}
+}

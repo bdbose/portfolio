@@ -1,0 +1,96 @@
+/** @format */
+
+.hero-cover {
+	padding: 10vh 0;
+	min-height: 73vh;
+	background: linear-gradient(0deg, #4123e9 -46.76%, #3f3d56 84.28%);
+	@media screen and (max-height: 510px) {
+		padding-top: 5vh;
+		height: 100%;
+	}
+	.hero-main {
+		max-width: 1350px;
+		margin: auto;
+	}
+	.hero-container {
+		display: flex;
+		align-self: center;
+		margin: auto;
+		max-width: 1350px;
+		width: 100%;
+		margin-top: 35px;
+		justify-content: space-around;
+		@media screen and (max-width: 800px) {
+			flex-direction: column-reverse;
+			margin-top: 0;
+		}
+	}
+	.hero-title-container {
+		display: flex;
+		align-items: center;
+		align-self: center;
+		flex-direction: column;
+		margin: 30px;
+		@media screen and (max-width: 800px) {
+			width: 90%;
+			margin: 0;
+		}
+	}
+	.hero-title {
+		font-family: Russo One;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 3.2vw;
+		line-height: 87px;
+		color: #ffffff;
+		width: 40vw;
+		@media screen and (max-width: 800px) {
+			margin: 20px;
+			font-size: xx-large;
+			line-height: 10vw;
+			width: 100%;
+		}
+	}
+	.hero-svg-container {
+		height: 100%;
+		width: 40vw;
+		display: flex;
+		align-items: center;
+		align-self: center;
+		@media screen and (max-width: 800px) {
+			width: 100%;
+		}
+	}
+	.hero-svg {
+		width: 40vw;
+		height: 100%;
+		display: flex;
+		align-self: center;
+		justify-content: center;
+		@media screen and (max-width: 800px) {
+			width: 100%;
+			height: 270px;
+		}
+		@media screen, (max-width: 800px) and (max-height: 510px) {
+			width: 100%;
+			height: 100%;
+		}
+	}
+	.social-link {
+		display: flex;
+		width: 40vw;
+		justify-content: space-between;
+		@media screen and (max-width: 800px) {
+			width: 100%;
+			justify-content: space-between;
+		}
+		img {
+			width: 7vw;
+			max-width: 100px;
+			@media screen and (max-width: 800px) {
+				width: auto;
+				height: 7vh;
+			}
+		}
+	}
+}

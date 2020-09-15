@@ -1,0 +1,31 @@
+/** @format */
+
+.project-wrapper {
+	.project-titles {
+		text-align: center;
+		font-family: Russo One;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 3.2vw;
+		line-height: 108px;
+		color: #2f2e41;
+		margin: 20px 0;
+		@media screen and (max-width: 800px) {
+			text-align: center;
+
+			line-height: 50px;
+			font-size: xx-large;
+		}
+	}
+	.project-display {
+		display: grid;
+		justify-content: space-evenly;
+		grid-template-columns: auto auto auto;
+		@media screen and (max-width: 1050px) {
+			grid-template-columns: auto auto;
+		}
+		@media screen and (max-width: 800px) {
+			grid-template-columns: auto;
+		}
+	}
+}

@@ -1,0 +1,78 @@
+/** @format */
+
+.personal-details {
+	position: relative;
+	bottom: 110px;
+	.stack {
+		width: 65vw;
+		max-width: 1080px;
+		background: #ffffff;
+		box-shadow: 4px 10px 8px rgba(0, 0, 0, 0.25);
+		border-radius: 20px;
+		padding: 20px;
+		padding-top: 120px;
+		margin: auto;
+		padding-bottom: 50px;
+		@media screen and (max-width: 800px) {
+			width: 80vw;
+		}
+	}
+	.personal-info {
+		width: 80%;
+		margin: auto;
+		font-family: Russo One;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 18px;
+		text-align: center;
+		@media screen and (max-width: 800px) {
+			font-size: 12px;
+		}
+	}
+	.tech-stack-container {
+		display: grid;
+		grid-template-columns: auto auto auto;
+		@media screen and (max-width: 800px) {
+			grid-template-columns: auto auto;
+		}
+	}
+	.texh-title {
+		padding: 30px 0;
+		font-size: 24px;
+		width: 80%;
+		text-align: left;
+		@media screen and (max-width: 800px) {
+			font-size: 18px;
+		}
+	}
+	.tech-stack {
+		margin: auto;
+		font-family: Russo One;
+		font-style: normal;
+		font-weight: normal;
+		margin: auto;
+		.tech-txt {
+			font-size: 20px;
+			white-space: pre;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			text-align: center;
+			height: 58px;
+			@media screen and (max-width: 800px) {
+				font-size: 12px;
+			}
+		}
+		img {
+			width: 100px;
+			margin: auto;
+			display: flex;
+			@media screen and (max-width: 800px) {
+				width: 50px;
+			}
+		}
+		.tech-wrapper {
+			padding-bottom: 20px;
+		}
+	}
+}

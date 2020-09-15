@@ -1,0 +1,52 @@
+/** @format */
+
+.project-cards {
+	border-radius: 20px;
+	margin: 20px 0;
+	background: #3f3d56;
+	font-family: Russo One;
+	font-style: normal;
+	font-weight: normal;
+	width: 400px;
+	box-shadow: 0px 9px 15px 7px rgba(0, 0, 0, 0.25);
+	@media screen and (max-width: 800px) {
+		width: 90vw;
+	}
+	img {
+		width: 100%;
+		height: 220px;
+		border-top-left-radius: 20px;
+		border-top-right-radius: 20px;
+	}
+	.project-details {
+		color: white;
+		height: 100%;
+		width: 100%;
+		padding-bottom: 30px;
+		div {
+			display: flex;
+			flex-direction: column;
+			align-content: center;
+			margin: 30px;
+		}
+		.project-name {
+			margin-bottom: 30px;
+			font-size: 24px;
+		}
+		.project-tech {
+			opacity: 0.7;
+			margin-bottom: 10px;
+		}
+		.project-chechkout {
+			opacity: 0.7;
+			margin-bottom: 10px;
+			a {
+				color: white;
+				line-break: anywhere;
+			}
+		}
+	}
+}
+.project-cards:hover {
+	transform: translateY(5px) scale(1.02);
+}
