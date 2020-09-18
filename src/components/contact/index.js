@@ -5,6 +5,8 @@ import Navbar from '../../container/navbar';
 import Axios from 'axios';
 import Footer from '../../container/footer';
 import './style.scss';
+import Snackbar from '@material-ui/core/Snackbar';
+import MuiAlert from '@material-ui/lab/Alert';
 
 const Social = [
 	{
@@ -33,10 +35,17 @@ const Social = [
 	},
 ];
 
+function Alert(props) {
+	return <MuiAlert elevation={6} variant='filled' {...props} />;
+}
+
 const Contact = () => {
 	const [email, setEmail] = useState('');
 	const [msg, setMsg] = useState('');
+	const [message, setMessage] = useState('');
+	const [loading, setloading] = useState(false);
 	const Submit = async (e) => {
+		setloading(true);
 		e.preventDefault();
 		await Axios.post('https://email-contact.herokuapp.com/', {
 			email,
@@ -44,13 +53,29 @@ const Contact = () => {
 		}).then((data) => {
 			console.log(data.data);
 			if (data.data === 'successful') {
-				console.log(data);
+				setMessage('Thank You For Contacting');
+				setloading(false);
 			} else {
-				console.log('Failed');
+				setMessage('Failed');
+				setloading(false);
 			}
+			handleClick();
 		});
-		e.reset();
+		document.getElementById('contact-form').reset();
 	};
+	const [open, setOpen] = useState(false);
+
+	const handleClick = () => {
+		setOpen(true);
+	};
+
+	const handleClose = (event, reason) => {
+		if (reason === 'clickaway') {
+			return;
+		}
+		setOpen(false);
+	};
+
 	return (
 		<div className='contact'>
 			<Navbar />
@@ -59,7 +84,7 @@ const Contact = () => {
 			<div className='contact-wrapper'>
 				<div className='contact-box'>
 					<div className='small-title'>Contact</div>
-					<form onSubmit={(e) => Submit(e)}>
+					<form id='contact-form' onSubmit={(e) => Submit(e)}>
 						<input
 							type='email'
 							onChange={(e) => setEmail(e.target.value)}
@@ -71,7 +96,15 @@ const Contact = () => {
 							placeholder='Message'
 							required
 						/>
-						<button>Submit</button>
+						{!loading ? (
+							<button>Submit</button>
+						) : (
+							<button
+								style={{ background: '#65638f', cursor: 'not-allowed' }}
+								disabled>
+								Submitting
+							</button>
+						)}
 					</form>
 				</div>
 				<div className='contact-box'>
@@ -96,7 +129,7 @@ const Contact = () => {
 				</div>
 			</div>
 
-			<div className='contact-title'>Socail Contacts</div>
+			<div className='contact-title'>Social Contacts</div>
 			<div className='social-link'>
 				{Social.map((i) => {
 					return (
@@ -111,6 +144,13 @@ const Contact = () => {
 				})}
 			</div>
 			<Footer />
+			<Snackbar open={open} autoHideDuration={6000} onClose={handleClose}>
+				<Alert
+					onClose={handleClose}
+					severity={message === 'Failed' ? 'error' : 'success'}>
+					{message}
+				</Alert>
+			</Snackbar>
 		</div>
 	);
 };
