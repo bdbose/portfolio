@@ -4,6 +4,7 @@ import React from 'react';
 import './style.scss';
 import Img from '../img';
 import './style.scss';
+import resume from '../../assets/BidiptoBose.pdf';
 
 const tech = [
 	{
@@ -86,13 +87,27 @@ const des = {
 	title: 'My Tech Stack',
 };
 const PersonalDetails = () => {
+	const DowloadPdf = () => {
+		const url = resume;
+		const link = document.createElement('a');
+		link.href = url;
+		link.setAttribute('download', 'BidiptoBose_Resume.pdf');
+		document.body.appendChild(link);
+		link.click();
+	};
 	return (
 		<div className='personal-details' id='personal'>
 			<Img />
 			<div className='stack'>
 				<div className='personal-info'>
 					{des.info}
-					<div className='texh-title'>{des.title}</div>
+					<div className='title-wrapper'>
+						<div className='texh-title'>{des.title}</div>
+						<div className='portfolio' onClick={DowloadPdf}>
+							<span>Download Resume</span>
+							<img src={'/logo/download.svg'} alt='download' />
+						</div>
+					</div>
 				</div>
 				<div className='tech-stack'>
 					<div className='tech-stack-container'>
