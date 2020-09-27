@@ -39,6 +39,12 @@ const Personal = [
 		link: '/',
 	},
 	{
+		url: '/projects/socket.png',
+		title: 'Chatting App',
+		tech: 'ReactJs + Nodejs + SocketIO',
+		link: 'https://bosechat.netlify.app/chat',
+	},
+	{
 		url: '/projects/blog.png',
 		title: 'Writing and Creating Blog Posts',
 		tech: 'NextJs',
