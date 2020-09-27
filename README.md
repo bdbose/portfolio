@@ -13,6 +13,6 @@
 <li> Scss
 <li> HTML
 
-## Preview :
+## :earth_asia: Preview :
 
 <img src='/public/projects/portfolio.png' width='100%' height='400' >
