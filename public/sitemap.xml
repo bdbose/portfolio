@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+      <urlset xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 
+      http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" 
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" 
+      xmlns:xhtml="http://www.w3.org/1999/xhtml">
+<url>
+<loc>https://bosecode.netlify.app/</loc>
+<lastmod>2020-11-02T14:23:53+00:00</lastmod>
+<loc>https://bosecode.netlify.app/projects</loc>
+<lastmod>2020-11-02T14:23:53+00:00</lastmod>
+<loc>https://bosecode.netlify.app/blog</loc>
+<lastmod>2020-11-02T14:23:53+00:00</lastmod>
+<loc>https://bosecode.netlify.app/contact</loc>
+<lastmod>2020-11-02T14:23:53+00:00</lastmod>
+<loc>https://bosecode.netlify.app/404</loc>
+<lastmod>2020-11-02T14:23:53+00:00</lastmod>
+<loc>https://bosecode.netlify.app/#personal</loc>
+<lastmod>2020-11-02T14:23:53+00:00</lastmod>
+</url>
+</urlset>
