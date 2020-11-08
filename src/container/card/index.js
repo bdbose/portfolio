@@ -23,6 +23,12 @@ const Internship = [
 		tech: 'UI/UX + Reactjs + Django + Postgresql',
 		link: 'https://beetract2.netlify.app/',
 	},
+	{
+		url: '/projects/close.png',
+		title: 'Close Company - 1-Tap Checkout Fast. Safe. Rewarding',
+		tech: 'UI/UX + Reactjs + NodeJs + MongoDb',
+		link: 'https://letsdooit.in/',
+	},
 ];
 
 const Personal = [

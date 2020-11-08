@@ -4,7 +4,7 @@ import React from 'react';
 import './style.scss';
 
 const ProjectCard = (props) => {
-	console.log(props);
+	// console.log(props);
 	return (
 		<div className='project-cards'>
 			<div className='project-img'>
