@@ -4,7 +4,7 @@ import React from 'react';
 import './style.scss';
 const info = {
 	url: '/social/info.svg',
-	title: 'Information',
+	title: 'More Information',
 	des: [
 		'	I Build Websites With Both Secure Backends And Wonderful UIs In Frontend. You Can Check Out My Works From The Projects Link In The Navbar . And If You Need To Contact Or Hire Me For Website Development All The Links Are Here In The Website.',
 		'Thank You For Visiting !',

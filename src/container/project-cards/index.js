@@ -13,6 +13,13 @@ const ProjectCard = (props) => {
 			<div className='project-details'>
 				<div className='project-name'>{props.data.title}</div>
 				<div className='project-tech'>{props.data.tech}</div>
+				{props.data.myPart ? (
+					<div className='project-mypart'>
+						{props.data.myPart.map((i) => {
+							return <li>{i}</li>;
+						})}
+					</div>
+				) : null}
 				<div className='project-chechkout'>
 					Check out:{' '}
 					<a href={props.data.link} target='_blank' rel='noopener noreferrer'>

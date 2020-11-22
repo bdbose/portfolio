@@ -9,25 +9,45 @@ const Internship = [
 		url: '/projects/henlo.png',
 		title: 'Henlo - A Secure Video and Messaging Calling App',
 		tech: 'UI/UX + Reactjs + React Native + Electron + Nodejs + Nextjs',
-		link: 'https://henlo.in/',
+		link: '',
+		myPart: ['Created the landing pages', 'Fixed Bugs on Frontend'],
 	},
 	{
 		url: '/projects/needenergy.png',
 		title: 'Need Energy - Using Data Intelligence To Provide Energy Solution',
 		tech: 'UI/UX + Reactjs + AWS + Nextjs',
 		link: 'https://www.needenergy.io/',
+		myPart: [
+			'Created All the landing pages',
+			'Worked on AWS(Cognitio,Amplify,App Sync) and GraphQL',
+			'Created CMS',
+		],
 	},
 	{
 		url: '/projects/beetract.png',
 		title: 'Beetract - Another Way To Freelance and Prelance',
 		tech: 'UI/UX + Reactjs + Django + Postgresql',
 		link: 'https://beetract2.netlify.app/',
+		myPart: ['Worked on the Frontend', 'Created CMS and Authentication'],
 	},
 	{
 		url: '/projects/close.png',
 		title: 'Close Company - 1-Tap Checkout Fast. Safe. Rewarding',
 		tech: 'UI/UX + Reactjs + NodeJs + MongoDb',
 		link: 'https://letsdooit.in/',
+		myPart: ['Worked on Frontend and Backend Fixes'],
+	},
+	{
+		url: '/projects/Salesbook.png',
+		title: 'SalesBook - 100% free Customer and Lead Manager',
+		tech: 'Flutter + NodeJs + MongoDb',
+		link:
+			'https://play.google.com/store/apps/details?id=com.theclosecompany.sales_book',
+		myPart: [
+			'Created entire backend and database handling',
+			'Server Handling on Aws(EC2)',
+			'Worked on S3 bucket to store files',
+		],
 	},
 ];
 
@@ -82,7 +102,7 @@ const Card = () => {
 		<div className='project-wrapper'>
 			<div className='project-titles'>Internship Projects</div>
 			<div className='project-display'>
-				{Internship.map((i) => {
+				{Internship.reverse().map((i) => {
 					return <ProjectCard data={i} key={i.title} />;
 				})}
 			</div>
