@@ -4,7 +4,6 @@ import React from 'react';
 import './style.scss';
 import Img from '../img';
 import './style.scss';
-import resume from '../../../public/BidiptoBoseResume.pdf';
 
 const tech = [
   {
@@ -88,7 +87,7 @@ const des = {
 };
 const PersonalDetails = () => {
   const DowloadPdf = () => {
-    const url = resume;
+    const url = '/BidiptoBoseResume.pdf';
     const link = document.createElement('a');
     link.href = url;
     link.setAttribute('download', 'BidiptoBose_Resume.pdf');
