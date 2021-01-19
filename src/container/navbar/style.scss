@@ -1,85 +1,85 @@
 /** @format */
 
 .navbar {
-	.nav-container {
-		max-width: 1660px;
-		margin: auto;
-		display: flex;
-		justify-content: space-between;
-		align-items: center;
-	}
-	.title-icon {
-		font-family: Russo One;
-		font-style: normal;
-		font-weight: normal;
-		font-size: 36px;
-		line-height: 58px;
-		color: #ffd32a;
-		margin: 0 20px;
-	}
-	.nav-links {
-		a {
-			text-decoration: none;
-			font-family: Russo One;
-			font-style: normal;
-			font-weight: normal;
-			font-size: 24px;
-			line-height: 58px;
-			text-align: center;
-			margin: 0 20px;
-			color: #ffffff;
-			cursor: pointer;
-		}
-		a:hover {
-			color: #ffd32a;
-		}
-		@media screen and (max-width: 800px) {
-			display: none;
-		}
-	}
-	.nav-icon {
-		display: none;
-		@media screen and (max-width: 800px) {
-			display: block;
-			margin: 0 20px;
-			transition: 0.4s ease-in;
-			img {
-				width: 30px;
-				cursor: pointer;
-			}
-		}
-	}
+  .nav-container {
+    max-width: 1660px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .title-icon {
+    font-family: Russo One;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 36px;
+    line-height: 58px;
+    color: #ffd32a;
+    margin: 0 20px;
+  }
+  .nav-links {
+    a {
+      text-decoration: none;
+      font-family: Russo One;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 24px;
+      line-height: 58px;
+      text-align: center;
+      margin: 0 20px;
+      color: #ffffff;
+      cursor: pointer;
+    }
+    a:hover {
+      color: #ffd32a;
+    }
+    @media screen and (max-width: 800px) {
+      display: none;
+    }
+  }
+  .nav-icon {
+    display: none;
+    @media screen and (max-width: 800px) {
+      display: block;
+      margin: 0 20px;
+      transition: 0.4s ease-in;
+      img {
+        width: 30px;
+        cursor: pointer;
+      }
+    }
+  }
 
-	.nav-links-mob {
-		display: none;
-		position: relative;
-		flex-direction: column;
-		animation: ani 2s cubic-bezier(0.075, 0.82, 0.165, 1);
-		a {
-			display: flex;
-			justify-content: center;
-			width: 100%;
-			text-decoration: none;
-			font-family: Russo One;
-			font-style: normal;
-			font-weight: normal;
-			font-size: 24px;
-			line-height: 58px;
-			text-align: center;
-			color: #ffffff;
-			cursor: pointer;
-		}
-		@media screen and (min-width: 800px) {
-			display: none;
-		}
-	}
+  .nav-links-mob {
+    display: none;
+    position: relative;
+    flex-direction: column;
+    animation: ani 2s cubic-bezier(0.075, 0.82, 0.165, 1);
+    a {
+      display: flex;
+      justify-content: center;
+      width: 100%;
+      text-decoration: none;
+      font-family: Russo One;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 24px;
+      line-height: 58px;
+      text-align: center;
+      color: #ffffff;
+      cursor: pointer;
+    }
+    @media screen and (min-width: 800px) {
+      display: none;
+    }
+  }
 }
 
 @keyframes ani {
-	0% {
-		height: 0;
-	}
-	100% {
-		height: 100%;
-	}
+  0% {
+    height: 0;
+  }
+  100% {
+    height: 100%;
+  }
 }
