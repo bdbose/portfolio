@@ -1,4 +1,3 @@
-/** @format */
 import React from 'react';
 import './style.scss';
 import Lottie from 'react-lottie';
@@ -57,7 +56,7 @@ const Hero = () => {
                     target='_blank'
                     rel='noopener noreferrer'
                     key={i.url}>
-                    <img src={i.url} alt={i.url} />
+                    <img src={i.url} alt={i.url} height='auto' width='auto' />
                   </a>
                 );
               })}

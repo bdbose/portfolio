@@ -53,7 +53,7 @@ const Navbar = () => {
           </a>
         </div>
         <div className='nav-icon' id='nav-icon-id' onClick={Dropdown}>
-          <img src='/logo/menu.svg' alt='' />
+          <img src='/logo/menu.svg' alt='' height='auto' width='auto' />
         </div>
       </div>
       <div className='nav-links-mob' id='mob-bar'>

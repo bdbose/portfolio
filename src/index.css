@@ -1,10 +1,8 @@
 /** @format */
-
 body,
 html {
 	margin: 0;
 	background: linear-gradient(180deg, #e9e9ff 0%, rgba(255, 255, 255, 0) 100%),
 		linear-gradient(0deg, #f8f8ff, #f8f8ff), no-repeat;
 	background-size: cover;
-	scroll-behavior: 1s smooth;
 }

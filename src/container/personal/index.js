@@ -104,7 +104,7 @@ const PersonalDetails = () => {
             <div className='texh-title'>{des.title}</div>
             <div className='portfolio' onClick={DowloadPdf}>
               <span>Download Resume</span>
-              <img src={'/logo/download.svg'} alt='download' />
+              <img src={'/logo/download.svg'} alt='download' height='auto' width='auto' />
             </div>
           </div>
         </div>
@@ -113,7 +113,7 @@ const PersonalDetails = () => {
             {tech.map(({ txt, img }) => {
               return (
                 <div className='tech-wrapper' key={txt}>
-                  <img src={img} alt={txt} />
+                  <img src={img} alt={txt} height='auto' width='auto' />
                   <div className='tech-txt'>
                     {Array.isArray(txt) ? txt.join('\n') : txt}
                   </div>

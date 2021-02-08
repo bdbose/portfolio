@@ -16,7 +16,7 @@ const Info = () => {
 		<div className='info'>
 			<div className='info-container'>
 				<div className='info-svg'>
-					<img src={info.url} alt={info.title} />
+					<img src={info.url} alt={info.title} height='auto' width='auto' />
 				</div>
 				<div className='info-text'>
 					<div className='info-title'>{info.title}</div>
