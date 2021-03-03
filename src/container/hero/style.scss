@@ -1,10 +1,6 @@
-/** @format */
-
 .hero-cover {
   padding: 10vh 0;
   min-height: 73vh;
-  background-image: url('/back.webp');
-  background-color: rgb(63, 61, 86);
   background-size: cover;
   @media screen and (max-height: 510px) {
     padding-top: 5vh;
@@ -46,6 +42,7 @@
     line-height: 87px;
     color: #ffffff;
     width: 40vw;
+    z-index: 99;
     @media screen and (max-width: 800px) {
       margin: 20px;
       font-size: xx-large;
@@ -83,6 +80,7 @@
   .social-link {
     display: flex;
     width: 40vw;
+    z-index: 99;
     justify-content: space-between;
     @media screen and (max-width: 800px) {
       width: 100%;
