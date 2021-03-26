@@ -72,6 +72,17 @@ const Internship = [
 
 const Personal = [
   {
+    url: 'https://copy-landing.vercel.app/assets/copylanding.jpg',
+    title: `AI Powered Chatbot - 
+I am Cai - I am a AI powered
+chatbot ! You can ask me any
+questions . Join me lets have
+a great chat!`,
+    tech:
+      'NextJs + ReactJs + Styled + Sass + Nodejs + Firebase + SocketIo + Python + Flask + Tensorflow',
+    link: 'https://copy-landing.vercel.app/',
+  },
+  {
     url: '/projects/news24.png',
     title: 'Automated News Website',
     tech: 'NextJs + NodeJs + Firebase',
@@ -88,6 +99,12 @@ const Personal = [
     title: 'My Personal Portfolio Website',
     tech: 'ReactJs + NodeJs',
     link: '/',
+  },
+  {
+    url: 'https://github.com/bdbose/image/raw/master/public/si1.png',
+    title: 'Search Unlimited Images - Unsplash Api',
+    tech: 'ReactJs + Api',
+    link: 'https://unsplash-image.netlify.app/',
   },
   {
     url: '/projects/socket.png',
