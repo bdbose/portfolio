@@ -1,0 +1,11 @@
+.blog-post-wrapper {
+  .post-wrapper {
+    img {
+      width: 80vw;
+      height: auto;
+      @media screen and(max-width:767px) {
+        height: 300px;
+      }
+    }
+  }
+}

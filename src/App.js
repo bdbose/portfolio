@@ -9,20 +9,22 @@ import Project from './components/projects';
 import NoPage from './components/404';
 import ContactForm from './components/contact';
 import Blog from './components/blog';
+import BlogId from './components/blog/id';
 function App() {
-	return (
-		<div className='App'>
-			<BrowserRouter>
-				<Switch>
-					<Route path='/' exact component={Home} />
-					<Route path='/projects' component={Project} />
-					<Route path='/contact' component={ContactForm} />
-					<Route path='/blogs' component={Blog} />
-					<Route path='*' component={NoPage} />
-				</Switch>
-			</BrowserRouter>
-		</div>
-	);
+  return (
+    <div className='App'>
+      <BrowserRouter>
+        <Switch>
+          <Route path='/' exact component={Home} />
+          <Route path='/projects' component={Project} />
+          <Route path='/contact' component={ContactForm} />
+          <Route path='/blogs' exact component={Blog} />
+          <Route path='/blogs/:id' exact component={BlogId} />
+          <Route path='*' component={NoPage} />
+        </Switch>
+      </BrowserRouter>
+    </div>
+  );
 }
 
 export default App;

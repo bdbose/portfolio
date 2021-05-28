@@ -1,60 +1,15 @@
 /** @format */
 
 .blog {
-	$primaryColor: #fff;
-	$secondaryColor: #333;
-	$steps: 20;
-	.text-cover {
-		background-color: $secondaryColor;
-		height: 50vh;
-	}
-	.glitch {
-		position: relative;
-		margin: 0 auto;
-		color: #fff;
-		font-size: 80px;
-		font-family: monospace;
-		font-weight: 600;
-		text-align: center;
-		text-transform: uppercase;
-		letter-spacing: 0.01em;
-		top: 50%;
-		transform: translate(0, -50%);
-		@media screen and (max-width: 800px) {
-			font-size: 36px;
-		}
-
-		&::before,
-		&::after {
-			content: attr(data-text);
-			position: absolute;
-			top: 0;
-			left: 0;
-			right: 0;
-			overflow: hidden;
-			background: $secondaryColor;
-			color: $primaryColor;
-			clip: rect(0, 900px, 0, 0);
-		}
-
-		&::before {
-			left: 7px;
-			text-shadow: 3px 0 #0ffbf9;
-			animation: glitch-effect 3s infinite linear alternate-reverse;
-		}
-
-		&::after {
-			left: 5px;
-			text-shadow: -4px 0 red;
-			animation: glitch-effect 2s infinite linear alternate-reverse;
-		}
-	}
-
-	@keyframes glitch-effect {
-		@for $i from 0 through $steps {
-			#{percentage($i*(1/$steps))} {
-				clip: rect(random(100) + px, 9999px, random(100) + px, 0);
-			}
-		}
-	}
+  .post-wrapper {
+    display: grid;
+    justify-content: space-evenly;
+    grid-template-columns: auto auto auto;
+    @media screen and (max-width: 1050px) {
+      grid-template-columns: auto auto;
+    }
+    @media screen and (max-width: 800px) {
+      grid-template-columns: auto;
+    }
+  }
 }
