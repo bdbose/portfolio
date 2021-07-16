@@ -81,13 +81,12 @@ const tech = [
 ];
 
 const des = {
-  info:
-    'Hi , I am Bidipto Bose from Kolkata , India . I am currently a 3rd year student in Calcutta Institute of Engineering and Management , pursuing B.Tech in Computer Science and Engineering. Coding is like a Hobby to me and learning new programming language is like my passion. Mainly focused on Website Development . Already 2years of experience in Website Development and also have experience in multiple internships .',
+  info: 'Hi , I am Bidipto Bose from Kolkata , India . I am currently a 3rd year student in Calcutta Institute of Engineering and Management , pursuing B.Tech in Computer Science and Engineering. Coding is like a Hobby to me and learning new programming language is like my passion. Mainly focused on Website Development . Already 2years of experience in Website Development and also have experience in multiple internships .',
   title: 'My Tech Stack',
 };
 const PersonalDetails = () => {
   const DowloadPdf = () => {
-    const url = '/BidiptoBoseResume.pdf';
+    const url = '/resume.pdf';
     const link = document.createElement('a');
     link.href = url;
     link.setAttribute('download', 'BidiptoBose_Resume.pdf');
@@ -104,7 +103,12 @@ const PersonalDetails = () => {
             <div className='texh-title'>{des.title}</div>
             <div className='portfolio' onClick={DowloadPdf}>
               <span>Download Resume</span>
-              <img src={'/logo/download.svg'} alt='download' height='auto' width='auto' />
+              <img
+                src={'/logo/download.svg'}
+                alt='download'
+                height='auto'
+                width='auto'
+              />
             </div>
           </div>
         </div>
