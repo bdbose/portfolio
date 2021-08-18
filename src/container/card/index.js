@@ -41,8 +41,7 @@ const Internship = [
     url: '/projects/Salesbook.png',
     title: 'SalesBook - 100% free Customer and Lead Manager',
     tech: 'Flutter + NodeJs + MongoDb',
-    link:
-      'https://play.google.com/store/apps/details?id=com.theclosecompany.sales_book',
+    link: 'https://play.google.com/store/apps/details?id=com.theclosecompany.sales_book',
     myPart: [
       'Created entire backend and database handling',
       'Server Handling on Aws(EC2)',
@@ -53,8 +52,7 @@ const Internship = [
     url: '/projects/closely.png',
     title: 'Closely - Upto 80% off on best online brands',
     tech: 'Flutter + NodeJs + MongoDb',
-    link:
-      'https://play.google.com/store/apps/details?id=com.theclosecompany.closely',
+    link: 'https://play.google.com/store/apps/details?id=com.theclosecompany.closely',
     myPart: ['Created backend Apis and database handling', 'Fixing Bugs'],
   },
   {
@@ -78,15 +76,20 @@ I am Cai - I am a AI powered
 chatbot ! You can ask me any
 questions . Join me lets have
 a great chat!`,
-    tech:
-      'NextJs + ReactJs + Styled + Sass + Nodejs + Firebase + SocketIo + Python + Flask + Tensorflow',
+    tech: 'NextJs + ReactJs + Styled + Sass + Nodejs + Firebase + SocketIo + Python + Flask + Tensorflow',
     link: 'https://copy-landing.vercel.app/',
   },
   {
     url: '/projects/news24.png',
     title: 'Automated News Website',
     tech: 'NextJs + NodeJs + Firebase',
-    link: 'https://newstoday24.netlify.app/',
+    link: 'https://newstoday24.tech/',
+  },
+  {
+    url: 'https://i.ibb.co/s9HG5Gw/image.png',
+    title: 'NewsToday - Top News, Top News Today, Top Stories',
+    tech: 'React Native + NodeJs + Firebase',
+    link: 'https://play.google.com/store/apps/details?id=com.newstodayapp',
   },
   {
     url: '/projects/Covid19.png',
@@ -146,8 +149,7 @@ a great chat!`,
     url: '/projects/sort.png',
     title: 'Visualization Of Different Sorting Methods',
     tech: 'Vanilla Javascript',
-    link:
-      'https://bdbose.github.io/Sorting-Virtualization/SortingVisualization.html ',
+    link: 'https://bdbose.github.io/Sorting-Virtualization/SortingVisualization.html ',
   },
   {
     url: '/projects/todo.png',
