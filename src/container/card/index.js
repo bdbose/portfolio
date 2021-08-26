@@ -4,23 +4,23 @@ import React from 'react';
 import './style.scss';
 import ProjectCard from '../project-cards';
 
-const Temp = [
-  {
-    url: 'https://i.ibb.co/ThqtzSm/image.png',
-    title: 'Najwa Zebian',
-    link: 'https://najwazebian.com/',
-  },
-  {
-    url: 'https://i.ibb.co/TWFjKzg/image.png',
-    title: 'Royal Diagnostic Centre',
-    link: 'https://www.rdckolkata.com/',
-  },
-  {
-    url: 'https://i.ibb.co/Jy6BkLY/image.png',
-    title: 'Buy Online Fruits Vegetables and Meat | Grocery Shop in Kolkata',
-    link: 'https://briskbasket.com/',
-  },
-];
+// const Temp = [
+//   {
+//     url: 'https://i.ibb.co/ThqtzSm/image.png',
+//     title: 'Najwa Zebian',
+//     link: 'https://najwazebian.com/',
+//   },
+//   {
+//     url: 'https://i.ibb.co/TWFjKzg/image.png',
+//     title: 'Royal Diagnostic Centre',
+//     link: 'https://www.rdckolkata.com/',
+//   },
+//   {
+//     url: 'https://i.ibb.co/Jy6BkLY/image.png',
+//     title: 'Buy Online Fruits Vegetables and Meat | Grocery Shop in Kolkata',
+//     link: 'https://briskbasket.com/',
+//   },
+// ];
 
 const Internship = [
   {
@@ -191,12 +191,12 @@ a great chat!`,
 const Card = () => {
   return (
     <div className='project-wrapper'>
-      <div className='project-titles'>Industry Projects</div>
+      {/* <div className='project-titles'>Industry Projects</div>
       <div className='project-display'>
         {Temp.reverse().map((i) => {
           return <ProjectCard data={i} key={i.title} />;
         })}
-      </div>
+      </div> */}
       <div className='project-titles'>Internship Projects</div>
       <div className='project-display'>
         {Internship.reverse().map((i) => {
