@@ -17,10 +17,11 @@ function App() {
         <Switch>
           <Route path='/' exact component={Home} />
           <Route path='/projects' component={Project} />
+          <Route path='/project' component={Project} />
           <Route path='/contact' component={ContactForm} />
           <Route path='/blogs' exact component={Blog} />
           <Route path='/blogs/:id' exact component={BlogId} />
-          <Route path='*' component={NoPage} />
+          <Route path='*' component={Home} />
         </Switch>
       </BrowserRouter>
     </div>
