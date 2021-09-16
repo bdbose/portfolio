@@ -6,7 +6,7 @@ import Home from './components/home';
 
 import './index.css';
 import Project from './components/projects';
-import NoPage from './components/404';
+// import NoPage from './components/404';
 import ContactForm from './components/contact';
 import Blog from './components/blog';
 import BlogId from './components/blog/id';
